@@ -105,11 +105,12 @@ def simec(x,A,steps,delta,epsilon):
 #------------------------------------------------------------------------------
 #               Run the algoithm and plot the result
 #------------------------------------------------------------------------------
+
 #Set the matrix of weights and the starting point  
 mat = np.matrix([1,-1,1])
-sp = np.asarray([1.85,1.3,1.5])
+sp = np.asarray([1.85,1.3,-1.5])
 #Run SiMEC  
-eq_list = simec(sp,mat,5000,.01,0.1)
+eq_list = simec(sp,mat,7500,.01,1e-8)
 #Plot the result
 xl, yl, zl  = zip(*eq_list)
 fig = plt.figure()
@@ -130,7 +131,7 @@ ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 xx, yy = np.meshgrid(range(1,4), range(1,4))
-zz = (- xx + yy + 2.05)
+zz = (- xx + yy -0.95)
 ax.plot_surface(xx, yy, zz, alpha=0.4)
 zz = (- xx + yy)
 ax.plot_surface(xx, yy, zz, alpha=0.5, color = "red")
@@ -138,6 +139,3 @@ ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 plt.show()
-
-for xl, yl, zl in eq_list:
-    print(xl-yl+zl)
