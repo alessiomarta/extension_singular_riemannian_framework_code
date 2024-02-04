@@ -1,5 +1,5 @@
 import torch
-from jacobian_functions import jacobian
+from jacobian_function import jacobian
 
 def simec(model,  input_, g, steps, epsilon = 1e-5, delta = 1e-4):
     x1 = input_

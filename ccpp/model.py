@@ -1,11 +1,7 @@
-import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from tqdm import tqdm
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Simplified version of the network in https://www.mdpi.com/2079-9292/12/11/2431
 # "Predicting Power Generation from a Combined Cycle Power Plant Using Transformer Encoders with DNN"

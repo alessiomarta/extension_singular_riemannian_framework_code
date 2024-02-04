@@ -6,9 +6,9 @@ from tqdm import tqdm
 import csv
 from model import Model
 import matplotlib.pyplot as plt
-
 from simec_algorithm import simec
 
+#Select the device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
