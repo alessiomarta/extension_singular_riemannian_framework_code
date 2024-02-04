@@ -13,7 +13,8 @@ Section 7.1.2
 
 Section 7.2
 
-- mnist/main.py
+- mnist/main_simec.py
+- mnist/main_simexp.py
 
 
 Section 7.3
