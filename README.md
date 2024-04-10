@@ -1,4 +1,4 @@
-Numerical experiments
+Code of the numerical experiments for the paper A singular Riemannian Geometry Approach to Deep Neural Networks III. Piecewise Differentiable Layers and Random Walks on n-dimensional Classes.
 
 
 Section 7.1.1
